@@ -1,0 +1,177 @@
+{
+  "files": {
+    "batch_utils/README.md": {
+      "bytes": 4337,
+      "sha256": "f03e4f204b906db2b11a447585e09b6e01af5129a88b9123a5066087309f3007"
+    },
+    "batch_utils/__init__.py": {
+      "bytes": 91,
+      "sha256": "50a358089004c69e4c83c41a55eb44c52179d3fa20be4d4c5b92fabbc8271ac4"
+    },
+    "batch_utils/__main__.py": {
+      "bytes": 78,
+      "sha256": "28de248c91c00642578a541827361af9b0e5e049e4c61dd6ec1f9dc78580c24e"
+    },
+    "batch_utils/api.py": {
+      "bytes": 3600,
+      "sha256": "ec5e17b5b02c20a40e52beab7d5ebfd49e32129ef03eb918790df720b0d97177"
+    },
+    "batch_utils/bootstrap.py": {
+      "bytes": 679,
+      "sha256": "83e49883136af2088038c6070303d0e89071a318e98252b40ff988230e491817"
+    },
+    "batch_utils/cli.py": {
+      "bytes": 4761,
+      "sha256": "9dc0256b45252d7512b1c69eb7eba3b681725d7c6109287dc3892ec9a9d668e1"
+    },
+    "batch_utils/config.py": {
+      "bytes": 503,
+      "sha256": "0967244955e8f128e03cc6a85973a41d1571f78acf4a9bc6f91e6682781f9891"
+    },
+    "batch_utils/media.py": {
+      "bytes": 5135,
+      "sha256": "e0ee696b63f3171d5163aadb960322f422183981c3768efd76c409976f3fda5b"
+    },
+    "batch_utils/models.json": {
+      "bytes": 612,
+      "sha256": "210e56e9ed46f61c6e18a974b78fccfb6a6aee3a6b0cb6cda5b5f774f934f536"
+    },
+    "batch_utils/models.py": {
+      "bytes": 11436,
+      "sha256": "92b3ab4b376f9a4dd3c7f75568746467f17a969430c63330667f2c6d2760f1fe"
+    },
+    "batch_utils/pipeline.py": {
+      "bytes": 11853,
+      "sha256": "588d4105197706da8acf3b591ba9671239505b53030f1d30cba0088ddad5432e"
+    },
+    "batch_utils/preprocessing.py": {
+      "bytes": 3311,
+      "sha256": "6bc9a2c7f08f92b4933f68c0fc674f938339eceeebdec186eef1514294b167ee"
+    },
+    "batch_utils/requirements.txt": {
+      "bytes": 163,
+      "sha256": "66d607ebfbd6525e005db045812453c4356d7df4e42e7b40b4994bd0e5e0cd51"
+    },
+    "batch_utils/vendor/MANIFEST.json": {
+      "bytes": 3225,
+      "sha256": "91ce5d8a5f13a583d48384c5de7f46696f5cd896ad2c1f3ce0eead9a1acae6d8"
+    },
+    "batch_utils/vendor/flora_unified/__init__.py": {
+      "bytes": 5,
+      "sha256": "9f56e761d79bfdb34304a012586cb04d16b435ef6130091a97702e559260a2f2"
+    },
+    "batch_utils/vendor/flora_unified/unified_input.py": {
+      "bytes": 5978,
+      "sha256": "2aa2b521191b68913b03d7582b7a3bcfad49d90c014a1a1bb7571b5e4f08d7ef"
+    },
+    "batch_utils/vendor/production_adapter/TEMPSEG_PROMPTS.json": {
+      "bytes": 6654,
+      "sha256": "66edd6fb43b7fa55cc6257beee5c42a1a4555ab9790320c31114d77bd07a05f1"
+    },
+    "batch_utils/vendor/production_adapter/adapter.py": {
+      "bytes": 7526,
+      "sha256": "083c6788b561d726a85d9f3f8f516593a9f6f76a43f315581c821871e3f82312"
+    },
+    "batch_utils/vendor/production_adapter/core/flora_runtime/__init__.py": {
+      "bytes": 5,
+      "sha256": "9f56e761d79bfdb34304a012586cb04d16b435ef6130091a97702e559260a2f2"
+    },
+    "batch_utils/vendor/production_adapter/core/flora_runtime/exact_frame_serving.py": {
+      "bytes": 2120,
+      "sha256": "f921e279b5d52f723b3e77e25441763683d05c6e9cd2f8ff204466a50255b346"
+    },
+    "batch_utils/vendor/production_adapter/core/flora_runtime/schema.py": {
+      "bytes": 3489,
+      "sha256": "42c523e4db1a4da3fe0d0d578f3cf6e94aed7666c06e3f18081c209159de04b9"
+    },
+    "batch_utils/vendor/production_adapter/core/flora_runtime/subtask_captioning/__init__.py": {
+      "bytes": 5,
+      "sha256": "9f56e761d79bfdb34304a012586cb04d16b435ef6130091a97702e559260a2f2"
+    },
+    "batch_utils/vendor/production_adapter/core/flora_runtime/subtask_captioning/u2_contract.py": {
+      "bytes": 3511,
+      "sha256": "873476e78a9e3e222ae9e47fcb7a04c8c18ef518b2847c401a2e1cfb2292fe90"
+    },
+    "batch_utils/vendor/production_adapter/core/flora_runtime/subtask_captioning/u2_worker.py": {
+      "bytes": 2526,
+      "sha256": "870641228b0be442613d520232d451047742ca2ea41fd0cd51dbf0a58ba567d2"
+    },
+    "batch_utils/vendor/production_adapter/core/flora_runtime/video_segmentation/__init__.py": {
+      "bytes": 5,
+      "sha256": "9f56e761d79bfdb34304a012586cb04d16b435ef6130091a97702e559260a2f2"
+    },
+    "batch_utils/vendor/production_adapter/core/flora_runtime/video_segmentation/contracts.py": {
+      "bytes": 3361,
+      "sha256": "8591d849b0b65fda6b21511557d4ee5eabd47f8332e2b6831f40d5bb472d978c"
+    },
+    "batch_utils/vendor/production_adapter/core/flora_runtime/video_segmentation/fine_subtask.py": {
+      "bytes": 77158,
+      "sha256": "6fbf8337bab8491148a78a822187d74397b7f0552700252451a18cd7c78c8e04"
+    },
+    "batch_utils/vendor/production_adapter/core/flora_runtime/video_segmentation/fine_temporal.py": {
+      "bytes": 66254,
+      "sha256": "32f2b99c97176f5e10934450da638577268c2e5d9977c2ea138ebf1b7eda58fa"
+    },
+    "batch_utils/vendor/production_adapter/core/flora_runtime/video_segmentation/fine_worker.py": {
+      "bytes": 1090,
+      "sha256": "8a31a77180c8d406113d4b494644153564a6f46c8a9b68ad7babb3cc1695edec"
+    },
+    "batch_utils/vendor/production_adapter/core/flora_runtime/video_segmentation/interface.py": {
+      "bytes": 996,
+      "sha256": "a5424b2cc3a4c879552dd49bae207a58fb9e751359f441c03af167a2e1879359"
+    },
+    "batch_utils/vendor/production_adapter/core/flora_runtime/video_segmentation/scope_scheduler.py": {
+      "bytes": 12654,
+      "sha256": "be95411b39124d83811fe74dcac2d911169ecf475a81b7460c64b19fbbc7e5db"
+    },
+    "batch_utils/vendor/production_adapter/core/flora_runtime/worker_transport.py": {
+      "bytes": 953,
+      "sha256": "30fb64869eb6a27ab96bf394c105f19fcb42590be4424c66b76b89e17631693a"
+    },
+    "batch_utils/vendor/production_gdn_fix.py": {
+      "bytes": 202,
+      "sha256": "a3f52604bfa2ec58901df63215df5e47d37e1d7974aa56d36a1e4efe8cad3fc6"
+    },
+    "batch_utils/vendor/pts_input_adapter.py": {
+      "bytes": 2340,
+      "sha256": "d784d6b77005eb6945dee334e4c9136fbededfa2049d5945244f198517984767"
+    },
+    "batch_utils/vendor/robot_caption_geometry.py": {
+      "bytes": 2739,
+      "sha256": "1c874d3c63359663276d31a3e9c3112a5982ad4000f44c808541b2471f5f7d2d"
+    },
+    "batch_utils/vendor/support/canonical_rgb.py": {
+      "bytes": 1010,
+      "sha256": "1e3230c60b45d8e017060d8a5dd2b5f48e2199192f09dcff4d04c05b4349e35a"
+    },
+    "batch_utils/vendor/support/composers.py": {
+      "bytes": 1263,
+      "sha256": "180b97a6a634979c1b0dbe720ed7a1abd818dc7ee31fdc4eeca7a8277e43d1b6"
+    },
+    "batch_utils/vendor/support/plans.py": {
+      "bytes": 3762,
+      "sha256": "d75b918804c9ec10f8642d362a54a74c3eb875abf22e8a60228a0d6b2cbb570e"
+    },
+    "batch_utils/vendor/support/u2_contract.py": {
+      "bytes": 3321,
+      "sha256": "50190914b719bbc9b8f2b53e52a6bd2b142a452e2fb1c5c897ea4c31123ad4dd"
+    },
+    "batch_utils/vendor/tempseg_fp32_loader.py": {
+      "bytes": 3419,
+      "sha256": "7ee9889f5aa5909abf3ecd1c34e3ac2f81a32a2098d94ae3ba9f33831e7a07c0"
+    },
+    "batch_utils/vendor/verify_gdn.py": {
+      "bytes": 2149,
+      "sha256": "96596ff2db4425f4dea71798aeabb581aa83e1ad8a878cfcb9efb8dbac80cda6"
+    },
+    "infer.py": {
+      "bytes": 171,
+      "sha256": "8cddbb43ba5b9d884e8f771b9c9e219ce2e0a3c1d71a94a75d02b1d3b730f93d"
+    },
+    "batch_utils/THIRD_PARTY_NOTICES.md": {
+      "bytes": 1497,
+      "sha256": "b73d47aa224b69e8c97850912c23d8b29219126568a11fa41ee3d085a8a430a3"
+    }
+  },
+  "schema_version": "flora_inference_code_manifest_v1"
+}

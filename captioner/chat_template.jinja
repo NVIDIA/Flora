@@ -1,0 +1,48 @@
+{%- macro render_content(content, is_system_content=false) %}
+    {%- if content is string %}
+        {{- content }}
+    {%- elif content is iterable and content is not mapping %}
+        {%- for item in content %}
+            {%- if 'image' in item or 'image_url' in item or item.type == 'image' %}
+                {%- if is_system_content %}
+                    {{- raise_exception('System message cannot contain images.') }}
+                {%- endif %}
+                {{- '<|vision_start|><|image_pad|><|vision_end|>' }}
+            {%- elif 'video' in item or item.type == 'video' %}
+                {%- if is_system_content %}
+                    {{- raise_exception('System message cannot contain videos.') }}
+                {%- endif %}
+                {{- '<|vision_start|><|video_pad|><|vision_end|>' }}
+            {%- elif 'text' in item %}
+                {{- item.text }}
+            {%- else %}
+                {{- raise_exception('Unexpected item type in content.') }}
+            {%- endif %}
+        {%- endfor %}
+    {%- elif content is none or content is undefined %}
+        {{- '' }}
+    {%- else %}
+        {{- raise_exception('Unexpected content type.') }}
+    {%- endif %}
+{%- endmacro %}
+{%- if not messages %}
+    {{- raise_exception('No messages provided.') }}
+{%- endif %}
+{%- if tools %}
+    {{- raise_exception('This chat template does not support tools.') }}
+{%- endif %}
+{%- for message in messages %}
+    {%- if message.role == 'system' %}
+        {%- if not loop.first %}
+            {{- raise_exception('System message must be first.') }}
+        {%- endif %}
+        {{- '<|im_start|>system\n' + render_content(message.content, true) + '<|im_end|>\n' }}
+    {%- elif message.role == 'user' or message.role == 'assistant' %}
+        {{- '<|im_start|>' + message.role + '\n' + render_content(message.content) + '<|im_end|>\n' }}
+    {%- else %}
+        {{- raise_exception('Only system/user/assistant roles are supported.') }}
+    {%- endif %}
+{%- endfor %}
+{%- if add_generation_prompt %}
+    {{- '<|im_start|>assistant\n' }}
+{%- endif %}

@@ -1,0 +1,18 @@
+{
+  "tempseg": {
+    "repo": "nvidia/Flora-TempSeg",
+    "revision": "114a1076f70eb53f4a58ac045505db3087e79347",
+    "sha256": "1d80fe544e4cd1a7ff6b0ea4be71e988972408dab81d4c8af72e3a628739d6c3",
+    "repo_env": "FLORA_TEMPSEG_REPO"
+  },
+  "captioner": {
+    "repo": "nvidia/Flora-Captioner",
+    "revision": "fef0bbfe11829ca7f3539d58da7a6a2c2f109dc6",
+    "source_manifest_identity": "2ab6cafd286df7f446bfb84fbc4af7c54773d5e890dd277ac5a0453d0d4fb778",
+    "repo_env": "FLORA_CAPTIONER_REPO"
+  },
+  "tempseg_base": {
+    "repo": "Qwen/Qwen3.5-9B",
+    "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a"
+  }
+}

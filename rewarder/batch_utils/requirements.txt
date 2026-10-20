@@ -1,0 +1,8 @@
+vllm==0.24.0
+transformers==5.8.1
+qwen-vl-utils==0.0.14
+decord==0.6.0
+av>=15
+numpy<3
+Pillow>=11,<13
+huggingface_hub>=1.0
