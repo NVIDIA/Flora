@@ -26,6 +26,8 @@ pip install -r batch_utils/requirements.txt
 Run the scripts from a downloaded copy of this repository, the directory that contains
 `batch_utils/`; they load the weights stored next to it. To load the weights from elsewhere,
 pass `--model` with a Hub repository id or a local directory, or set `FLORA_REWARDER_REPO`.
+A GitHub checkout has no weights: run from its root as
+`python -m rewarder.batch_utils.terminal_reward --model nvidia/Flora-Rewarder ...`.
 The first run compiles GPU kernels and can take several minutes before scoring starts.
 `--dry-run` reads the videos and prints the first prompt without loading the model.
 

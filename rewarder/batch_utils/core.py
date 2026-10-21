@@ -33,6 +33,8 @@ VIDEO_PLACEHOLDER = "__video__"
 # ---------------------------------------------------------------------------
 
 FPS_RELATIVE_TOLERANCE = 0.01
+# Frames a container may report beyond the last decodable one.
+TAIL_FRAME_TOLERANCE = 2
 
 
 @dataclass(frozen=True)
@@ -64,12 +66,21 @@ def probe_video(path: str | Path) -> VideoInfo:
     return VideoInfo(str(path), float(rate), frames, width, height)
 
 
+def _rgb(frame, size: tuple[int, int] | None) -> np.ndarray:
+    image = frame.to_image()
+    if size is not None and image.size != tuple(size):
+        image = image.resize(tuple(size), resample=Image.Resampling.BILINEAR)
+    return np.asarray(image.convert("RGB"), dtype=np.uint8)
+
+
 def read_frames(
     path: str | Path, indices: Sequence[int], size: tuple[int, int] | None = None
 ) -> dict[int, np.ndarray]:
     """Decode the requested frame indices as RGB uint8 arrays, optionally resized.
 
     Resizing uses bilinear interpolation to ``size`` (width, height), with no crop or padding.
+    A container may count up to ``TAIL_FRAME_TOLERANCE`` frames more than it decodes (for
+    example a frame hidden by an edit list); those indices repeat the last decoded frame.
     """
     import av
 
@@ -82,18 +93,21 @@ def read_frames(
         stream.thread_type = "AUTO"
         pending = iter(wanted)
         target = next(pending)
+        last_position, last_frame = -1, None
         for position, frame in enumerate(container.decode(stream)):
+            last_position, last_frame = position, frame
             if position != target:
                 continue
-            image = frame.to_image()
-            if size is not None and image.size != tuple(size):
-                image = image.resize(tuple(size), resample=Image.Resampling.BILINEAR)
-            out[position] = np.asarray(image.convert("RGB"), dtype=np.uint8)
+            out[position] = _rgb(frame, size)
             target = next(pending, None)
             if target is None:
                 break
-    if len(out) != len(wanted):
-        raise ValueError(f"{path}: decoded fewer frames than its container reports")
+        if target is not None:
+            if last_frame is None or wanted[-1] - last_position > TAIL_FRAME_TOLERANCE:
+                raise ValueError(f"{path}: decoded fewer frames than its container reports")
+            tail = _rgb(last_frame, size)
+            for index in (target, *pending):
+                out[index] = tail
     return out
 
 
