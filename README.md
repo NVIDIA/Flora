@@ -15,11 +15,11 @@
 FLORA is a family of vision-language models (VLMs) that label robotics
 datasets. The family consists of three models:
 
-| Component | Purpose | Weights | Inference guide |
+| Model | Component | Purpose | Inference guide |
 |---|---|---|---|
-| Temporal segmentation | Locate action intervals | [Flora-TempSeg](https://huggingface.co/nvidia/Flora-TempSeg) | [Segmentation and captioning](tempseg/batch_utils/README.md) |
-| Action captioning | Caption each action interval | [Flora-Captioner](https://huggingface.co/nvidia/Flora-Captioner) | [Segmentation and captioning](captioner/batch_utils/README.md) |
-| Reward scoring | Evaluate outcomes, action quality, and rubric steps | [Flora-Rewarder](https://huggingface.co/nvidia/Flora-Rewarder) | [Rewarder](rewarder/batch_utils/README.md) |
+| [Flora-TempSeg](https://huggingface.co/nvidia/Flora-TempSeg) | Temporal segmentation | Locate action intervals | [Segmentation and captioning](tempseg/batch_utils/README.md) |
+| [Flora-Captioner](https://huggingface.co/nvidia/Flora-Captioner) | Action captioning | Caption each action interval | [Segmentation and captioning](captioner/batch_utils/README.md) |
+| [Flora-Rewarder](https://huggingface.co/nvidia/Flora-Rewarder) | Reward scoring | Evaluate outcomes, action quality, and rubric steps | [Rewarder](rewarder/batch_utils/README.md) |
 
 Temporal segmentation and contextual captioning produce timestamped action
 captions. The rewarder provides episode-level outcome scores, dense action
