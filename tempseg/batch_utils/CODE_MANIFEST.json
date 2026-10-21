@@ -54,7 +54,7 @@
     },
     "batch_utils/vendor/MANIFEST.json": {
       "bytes": 3225,
-      "sha256": "91ce5d8a5f13a583d48384c5de7f46696f5cd896ad2c1f3ce0eead9a1acae6d8"
+      "sha256": "aac7f0722fd6b9a5a29cfccabbd84b8ba406013636653451eb6c41f273611edf"
     },
     "batch_utils/vendor/flora_unified/__init__.py": {
       "bytes": 5,
@@ -77,56 +77,56 @@
       "sha256": "9f56e761d79bfdb34304a012586cb04d16b435ef6130091a97702e559260a2f2"
     },
     "batch_utils/vendor/production_adapter/core/flora_runtime/exact_frame_serving.py": {
-      "bytes": 2120,
-      "sha256": "f921e279b5d52f723b3e77e25441763683d05c6e9cd2f8ff204466a50255b346"
+      "bytes": 2135,
+      "sha256": "34779025146cf92edc87a2e90b3f683c0699d1fbf51866ca19dd1b9b7691bab5"
     },
     "batch_utils/vendor/production_adapter/core/flora_runtime/schema.py": {
-      "bytes": 3489,
-      "sha256": "42c523e4db1a4da3fe0d0d578f3cf6e94aed7666c06e3f18081c209159de04b9"
+      "bytes": 3504,
+      "sha256": "f93a3449274ebed18c433a2de42e3bd85a65ff82ce2bc71d270b4d3946d250c9"
     },
     "batch_utils/vendor/production_adapter/core/flora_runtime/subtask_captioning/__init__.py": {
       "bytes": 5,
       "sha256": "9f56e761d79bfdb34304a012586cb04d16b435ef6130091a97702e559260a2f2"
     },
     "batch_utils/vendor/production_adapter/core/flora_runtime/subtask_captioning/u2_contract.py": {
-      "bytes": 3511,
-      "sha256": "873476e78a9e3e222ae9e47fcb7a04c8c18ef518b2847c401a2e1cfb2292fe90"
+      "bytes": 3526,
+      "sha256": "7672d0d0e7f5cde7af5d948c5be368945b214290d5f2270cba633f2720554065"
     },
     "batch_utils/vendor/production_adapter/core/flora_runtime/subtask_captioning/u2_worker.py": {
-      "bytes": 2526,
-      "sha256": "870641228b0be442613d520232d451047742ca2ea41fd0cd51dbf0a58ba567d2"
+      "bytes": 2541,
+      "sha256": "617e7813cfee99da655045b171ea35b7836b53534924fff410da29342f7330e9"
     },
     "batch_utils/vendor/production_adapter/core/flora_runtime/video_segmentation/__init__.py": {
       "bytes": 5,
       "sha256": "9f56e761d79bfdb34304a012586cb04d16b435ef6130091a97702e559260a2f2"
     },
     "batch_utils/vendor/production_adapter/core/flora_runtime/video_segmentation/contracts.py": {
-      "bytes": 3361,
-      "sha256": "8591d849b0b65fda6b21511557d4ee5eabd47f8332e2b6831f40d5bb472d978c"
+      "bytes": 3376,
+      "sha256": "6821422ad969a64838b2a1512e39273737051932d3b27e10f694fd06690a60ef"
     },
     "batch_utils/vendor/production_adapter/core/flora_runtime/video_segmentation/fine_subtask.py": {
-      "bytes": 77158,
-      "sha256": "6fbf8337bab8491148a78a822187d74397b7f0552700252451a18cd7c78c8e04"
+      "bytes": 77173,
+      "sha256": "78cf778cb971695b198ff2b4a61c5e6b6f10fb37e234134a1d32f9ccb2b6cc23"
     },
     "batch_utils/vendor/production_adapter/core/flora_runtime/video_segmentation/fine_temporal.py": {
-      "bytes": 66254,
-      "sha256": "32f2b99c97176f5e10934450da638577268c2e5d9977c2ea138ebf1b7eda58fa"
+      "bytes": 66269,
+      "sha256": "3fe8f79cb3f22b3977e9665c26fc906e3388113520849d88751e2b24c12886c4"
     },
     "batch_utils/vendor/production_adapter/core/flora_runtime/video_segmentation/fine_worker.py": {
-      "bytes": 1090,
-      "sha256": "8a31a77180c8d406113d4b494644153564a6f46c8a9b68ad7babb3cc1695edec"
+      "bytes": 1105,
+      "sha256": "e0a010c21ef33567b3912b6c7b6dfca57f6b72130788dcc858561dbe7b1a262b"
     },
     "batch_utils/vendor/production_adapter/core/flora_runtime/video_segmentation/interface.py": {
-      "bytes": 996,
-      "sha256": "a5424b2cc3a4c879552dd49bae207a58fb9e751359f441c03af167a2e1879359"
+      "bytes": 1011,
+      "sha256": "db7812ed189e1c44d6e95c5f485d768abb64536a6e480ff0eab0487b665b791a"
     },
     "batch_utils/vendor/production_adapter/core/flora_runtime/video_segmentation/scope_scheduler.py": {
-      "bytes": 12654,
-      "sha256": "be95411b39124d83811fe74dcac2d911169ecf475a81b7460c64b19fbbc7e5db"
+      "bytes": 12669,
+      "sha256": "310f3d79aec28bbb838927ddb293f798c172a25f1cb4859b21bef8c2adeb648f"
     },
     "batch_utils/vendor/production_adapter/core/flora_runtime/worker_transport.py": {
-      "bytes": 953,
-      "sha256": "30fb64869eb6a27ab96bf394c105f19fcb42590be4424c66b76b89e17631693a"
+      "bytes": 968,
+      "sha256": "a1500b82c33e50a694f326d1b4db260a1e98f964c213d4ecd74a9c9fba808f77"
     },
     "batch_utils/vendor/production_gdn_fix.py": {
       "bytes": 202,
@@ -153,8 +153,8 @@
       "sha256": "d75b918804c9ec10f8642d362a54a74c3eb875abf22e8a60228a0d6b2cbb570e"
     },
     "batch_utils/vendor/support/u2_contract.py": {
-      "bytes": 3321,
-      "sha256": "50190914b719bbc9b8f2b53e52a6bd2b142a452e2fb1c5c897ea4c31123ad4dd"
+      "bytes": 3336,
+      "sha256": "8ba77bbdaf1858171f51624937a37aceb971af10422fa6c4334563ea717b212a"
     },
     "batch_utils/vendor/tempseg_fp32_loader.py": {
       "bytes": 3419,
