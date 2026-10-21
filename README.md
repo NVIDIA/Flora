@@ -8,7 +8,6 @@
 [Paper](https://research.nvidia.com/labs/gear/flora/assets/paper/flora.pdf) &nbsp;·&nbsp;
 [Weights](https://huggingface.co/collections/nvidia/flora) &nbsp;·&nbsp;
 [Examples](#examples) &nbsp;·&nbsp;
-[Method](METHOD.md) &nbsp;·&nbsp;
 [Action Annotation](#action-annotation) &nbsp;·&nbsp;
 [Reward Scoring](#reward-scoring)
 
@@ -19,10 +18,6 @@ FLORA turns manipulation videos into annotations for robot learning:
 Temporal segmentation and contextual captioning produce timestamped action
 instructions. The rewarder provides episode-level outcome scores, dense action
 quality, and scores for user-defined rubric steps.
-
-<a href="assets/readme/figure-7.png"><img src="assets/readme/figure-7.png" width="100%" alt="Figure 7: Video-to-supervision overview, with timestamped captions and dense, outcome, or rubric rewards."></a>
-
-*From video to reusable supervision — [Figure 7 in the paper](https://research.nvidia.com/labs/gear/flora/assets/paper/flora.pdf#page=8).*
 
 ## Examples
 
