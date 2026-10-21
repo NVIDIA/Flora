@@ -12,15 +12,18 @@
 
 </div>
 
-FLORA turns manipulation videos into annotations for robot learning:
-**when an action happens, what the action is, and how well it is performed.**
-Temporal segmentation and contextual captioning produce timestamped action
-instructions. The rewarder provides episode-level outcome scores, dense action
-quality, and scores for user-defined rubric steps.
+FLORA is a family of vision-language models (VLMs) that label robotics
+datasets. The family consists of three models:
 
-These examples reuse predictions and short video excerpts from the
-[FLORA project page](https://research.nvidia.com/labs/gear/flora/).
-The loops show excerpts; outcome and rubric scores describe the full episodes.
+| Component | Purpose | Weights | Inference guide |
+|---|---|---|---|
+| Temporal segmentation | Locate action intervals | [Flora-TempSeg](https://huggingface.co/nvidia/Flora-TempSeg) | [Segmentation and captioning](tempseg/batch_utils/README.md) |
+| Action captioning | Caption each action interval | [Flora-Captioner](https://huggingface.co/nvidia/Flora-Captioner) | [Segmentation and captioning](captioner/batch_utils/README.md) |
+| Reward scoring | Evaluate outcomes, action quality, and rubric steps | [Flora-Rewarder](https://huggingface.co/nvidia/Flora-Rewarder) | [Rewarder](rewarder/batch_utils/README.md) |
+
+Temporal segmentation and contextual captioning produce timestamped action
+captions. The rewarder provides episode-level outcome scores, dense action
+quality, and scores for user-defined rubric steps. Below are a few examples.
 
 ### Timestamped action captions
 
@@ -62,26 +65,10 @@ The loops show excerpts; outcome and rubric scores describe the full episodes.
 </tr>
 </table>
 
-## Models and Code
-
-**This repository provides sample vanilla inference code for the released
-weights, not the production inference system.** The examples are intended
-as a straightforward starting point for running and integrating FLORA.
-
+**This repo provides sample inference code for small-scale labeling.**
 For large-scale workloads, throughput can be improved with optimized inference
 frameworks, dynamic batching, asynchronous video decoding and preprocessing,
-and queue-based scheduling across persistent GPU workers. These optimizations
-are left to downstream deployments; the sample scripts' runtime does not
-represent production throughput.
-
-| Component | Purpose | Weights | Inference guide |
-|---|---|---|---|
-| Temporal segmentation | Locate action intervals | [Flora-TempSeg](https://huggingface.co/nvidia/Flora-TempSeg) | [Segmentation and captioning](tempseg/batch_utils/README.md) |
-| Action captioning | Describe each intended operation | [Flora-Captioner](https://huggingface.co/nvidia/Flora-Captioner) | [Segmentation and captioning](captioner/batch_utils/README.md) |
-| Reward scoring | Evaluate outcomes, action quality, and rubric steps | [Flora-Rewarder](https://huggingface.co/nvidia/Flora-Rewarder) | [Rewarder](rewarder/batch_utils/README.md) |
-
-Both `tempseg/` and `captioner/` contain the complete segmentation-to-caption
-workflow. The annotation examples below use `captioner/`.
+and queue-based scheduling across persistent GPU workers.
 
 ## Quick Start
 
